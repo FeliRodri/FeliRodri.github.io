@@ -1,0 +1,25 @@
+@font-face {
+
+    font-family: Raleway-Bold;
+    src: url('./fonts/Raleway-Bold.ttf')
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("./fonts/Raleway-Regular.ttf")
+}
+
+@font-face {
+    font-family: Raleway-Italic;
+    src: url("./fonts/Raleway-Italic.ttf")
+}
+
+@font-face {
+    font-family: Libre-Franklin-Thin;
+    src: url("./fonts/LibreFranklin-Thin.ttf")
+}
+
+@font-face {
+    font-family: Libre-Franklin-Bold;
+    src: url("./fonts/LibreFranklin-Bold.ttf")
+}
