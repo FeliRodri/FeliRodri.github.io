@@ -4,6 +4,7 @@
 <head>
     <title>El Faro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.mobile.css">
     <link rel="stylesheet" href="style.css">
@@ -12,41 +13,155 @@
 
 <body>
     <header>
-        <div class="top-buttons">
-            <i class="fa-solid fa-bars"></i>
-            <img src="./img/1608.m00.i125.n003.P.c25.350574899 Lighthouse on ocean or sea beach cartoon background vector illustration.jpg"
-                alt="logo el faro Mobile" />
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html"> Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./deporte.html"> Deportes</a>
-                    </li>
-                    <li>
-                        <a href="./negocios.html"> Negocios</a>
-                    </li>
-                </ul>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">El Faro</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./deporte.html">Deportes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./negocios.html">Negocios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Más Noticias
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#documentales">Documentales</a></li>
+                                    <li><a class="dropdown-item" href="#politica">Politica</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#saludBienestar">Salud y Bienestar</a></li>
+                                    <li><a class="dropdown-item" href="#ultimasNoticias">Últimas Noticias</a></li>
+                                </ul>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li> -->
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="Search" placeholder="Buscar Noticias..."
+                                aria-label="Search">
+                            <button class="btn btn-secondary" type="submit">
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
             </nav>
+
         </div>
+
         <div class="container">
+
             <div class="logo">
-                <img src="img/1608.m00.i125.n003.P.c25.350574899 Lighthouse on ocean or sea beach cartoon background vector illustration.jpg"
-                    alt="Logo de El Faro" />
+                <span class="titulo">El Faro</span>
+                <img src="./img/1608.m00.i125.n003.P.c25.350574899 Lighthouse on ocean or sea beach cartoon background vector illustration.jpg"
+                    width="350px" height="450px" class="rounded mx-auto d-block" alt="...">
+                <div class="icons-socialnetwork">
+                    <a href="#" class="btn-primary">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="btn-info">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn-dark">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn-success">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="btn-danger">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
             </div>
-            <div class="today-date">
-                <div class="line"></div>
-                <div class="date">domingo 2 de abril de 2023</div>
-                <div class="line"></div>
-            </div>
+
         </div>
+
+
+        <div class="today-date">
+            <div class="line"></div>
+            <div class="clock">
+                <p class="fecha"></p>
+                <div class="line"></div>
+                <p class="time"></p>
+            </div>
+            <div class="line"></div>
+        </div>
+
     </header>
     <main>
+        <div class="row container">
+            <div class="col-lg-10">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/boxeo.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pelicula de Boxeo</h5>
+                                <p>Mi cena con el verdadero Rocky Balboa antes de la pelea que inspiró a Stallone a
+                                    filmar la película.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/cientifica.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cientifica Chilena</h5>
+                                <p>La científica chilena que lucha contra el cambio climático utilizando Inteligencia
+                                    Artificial.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/bci.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Emprendedores</h5>
+                                <p>Bci abre convocatoria para emprendedores y empresas que ofrezcan soluciones
+                                    sostenibles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
         <section id="news-feed" class="container">
-            <div class="news-block">
-                <div class="left-block">
+            <div class="row">
+                <div class="left-col">
                     <article>
                         <h1>El papa Francisco preside la misa del Domingo de Ramos desde la Plaza de San Pedro en el
                             Vaticano </h1>
@@ -63,11 +178,10 @@
                         </figure>
                     </article>
                 </div>
-                <div class="right-block">
+                <div class="right-col">
                     <article>
                         <h2>La ONU alertó sobre el impacto del narcotráfico en América Latina: "Es la peor región a
-                            nivel de
-                            homicidios"
+                            nivel de homicidios"
                         </h2>
                         <h3>Internacional</h3>
                         <figure>
@@ -92,16 +206,153 @@
                     </article>
                 </div>
             </div>
+            <div class="row" id="documentales">
+                <h1>Documentales</h1>
+                <div class="col">
+                    <article>
+                        <h2>A medio siglo del rescate "milagroso" de los Andes que conmovió al mundo. Todo sobre el
+                            avión Uruguayo.
+                        </h2>
+                        <h3>Documentales</h3>
+                        <figure>
+                            <img src="./img/rescate-andes-e.jpg" alt="">
+                            <figcaption>
+                                <span>Por Cecilia Castro</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <h2>‘Cuando las aguas se juntan’: un documental sobre la respuesta de las mujeres colombianas a
+                            la guerra"
+                        </h2>
+                        <h3>Documentales</h3>
+                        <figure>
+                            <img src="./img/mujeresaguas.jpg" alt="">
+                            <figcaption>
+                                <span>Por Jaime Toro</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
 
+            <div class="row" id="politica">
+                <h1>Politica</h1>
+                <div class="col">
+                    <article>
+                        <h2>Ricardo Lagos invita a Natalia Piergentili a “fraterno desayuno” tras respaldo a Ravinet y
+                            molestias desde el PPD
+                        </h2>
+                        <h3>Politica</h3>
+                        <figure>
+                            <img src="./img/ricardolagos.jpg" alt="">
+                            <figcaption>
+                                <span>Por Camila Vallejos</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <h2>Cámara aprueba proyecto que agiliza procesos administrativos de expulsión de migrantes
+                            irregulares
+                        </h2>
+                        <h3>Politica</h3>
+                        <figure>
+                            <img src="./img/camaradiputador.jpg" alt="">
+                            <figcaption>
+                                <span>Por Gabriel Boric</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <h2>Comisión de Seguridad de la Cámara despacha a Sala proyecto sobre “criterio Valencia”
+                        </h2>
+                        <h3>Politica</h3>
+                        <figure>
+                            <img src="./img/criteriovalencia.jpg" alt="">
+                            <figcaption>
+                                <span>Por Arnaldo Sepúlveda</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row" id="saludBienestar">
+                <h1>Salud y Bienestar</h1>
+                <div class="col">
+                    <article>
+                        <h2>Estudio asegura que situaciones de estrés aumentan la edad biológica: cambios podrían ser
+                            reversibles
+                        </h2>
+                        <h3>Salud y Bienestar</h3>
+                        <figure>
+                            <img src="./img/studentstress-g74f050781_640.png" alt="">
+                            <figcaption>
+                                <span>Por Javiera Palta</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <h2>Llega a Chile la primera jeringa que no provoca dolor y no necesita agujas: ¿Cómo funciona?
+                        </h2>
+                        <h3>Salud y Bienestar</h3>
+                        <figure>
+                            <img src="./img/vacuna-vaccination-concept-ge224379ed_640.jpg" alt="">
+                            <figcaption>
+                                <span>Por Michelle Lopez</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <h2>¿Por qué jamás debes mezclar ciertos medicamentos con cerveza artesanal?: estas pastillas
+                            debes evitar
+                        </h2>
+                        <h3>Salud y Bienestar</h3>
+                        <figure>
+                            <img src="./img/cerveza-beer-g52e97fbaa_640.jpg" alt="">
+                            <figcaption>
+                                <span>Por Bernardita Villa</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+            <div class="last-news" id="ultimasNoticias">
+
+                <h1>Últimas Noticias</h1>
+            </div>
+            <div class="noticias">
+
+            </div>
+            <div class="row">
+                <div class="video">
+                    <h1> Los humanos como seres sociales | Sana Mente 2023 | Capítulo 4</h1>
+                    <iframe width="839" height="472" src="https://www.youtube.com/embed/4ka151nvFxk"
+                        title="Los humanos como seres sociales | Sana Mente 2023 | Capítulo 4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="audio">
+                <h1>Esta es la presentacion del Periodico Online "El Faro"</h1>
+                <audio src="./audio/periodico-elfaro.mp3" controls></audio>
+            </div>
         </section>
         <section id="news-feed-mobile">
             <a href="#">
                 <article>
                     <h1>El papa Francisco preside la misa del Domingo de Ramos desde la Plaza de San Pedro en el
                         Vaticano</h1>
-                    <p>Como en otras ocasiones y debido a que se desplaza en silla de ruedas por sus dolores de rodilla,
-                        el Sumo Pontífice encabeza la ceremonia sentado en el centro del altar. Celebra la eucaristía
-                        Leonardo Sandri, vicedecano del colegio cardenalicio</p>
                     <figure>
                         <img src="./img/news.jpg" />
                         <figcaption>
@@ -133,17 +384,26 @@
                         </figcaption>
                     </figure>
                 </article>
-            </a>
-            <a href="#">
                 <article>
-                    <h1>Así sería la Nueva Bombonera en la Isla Demarchi con capacidad para más de 100 mil personas</h1>
+                    <h1>¿Por qué jamás debes mezclar ciertos medicamentos con cerveza artesanal?: estas pastillas
+                        debes evitar
+                    </h1>
                     <figure>
-                        <img src="./img/estadio.jpg" />
+                        <img src="./img/cerveza-beer-g52e97fbaa_640.jpg" alt="">
                         <figcaption>
-                            <span>Por Andres Asenjo</span>
+                            <span>Por Bernardita Villa</span>
                         </figcaption>
                     </figure>
                 </article>
+            </a>
+            <a href="#">
+                <div class="video">
+                    <h1> Los humanos como seres sociales | Sana Mente 2023 | Capítulo 4</h1>
+                    <iframe width="415" height="350" src="https://www.youtube.com/embed/4ka151nvFxk"
+                        title="Los humanos como seres sociales | Sana Mente 2023 | Capítulo 4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </a>
 
         </section>
@@ -172,15 +432,202 @@
 
         </div>
         <div class="sitemap">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span>El Faro</span>
+                    </li>
+                    <li>
+                        <a href="#">Chile</a>
+                    </li>
+                    <li>
+                        <a href="#">América</a>
+                    </li>
+                    <li>
+                        <a href="#">México</a>
+                    </li>
+                    <li>
+                        <a href="#">Australia</a>
+                    </li>
+                    <li>
+                        <a href="#">Europa</a>
+                    </li>
+                    <li>
+                        <a href="#">RRSS</a>
+                    </li>
+                    <li>
+                        <a href="#">Últimas Noticias</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span>Contáctenos</span>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#">Redacción</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto Comercial</a>
+                    </li>
+                    <li>
+                        <a href="#">Media Kit</a>
+                    </li>
+                    <li>
+                        <a href="#">Empleo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span>Redes Sociales</span>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">YouTube</a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span>Servicios</span>
+                    </li>
+                    <li>
+                        <a href="#">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Politicas de Privacidad</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="copyright">
+        <div class="sitemap-mobile">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <span>El Faro</span>
+                        </li>
+                        <li>
+                            <a href="#">Chile</a>
+                        </li>
+                        <li>
+                            <a href="#">América</a>
+                        </li>
+                        <li>
+                            <a href="#">México</a>
+                        </li>
+                        <li>
+                            <a href="#">Australia</a>
+                        </li>
+                        <li>
+                            <a href="#">Europa</a>
+                        </li>
+                        <li>
+                            <a href="#">RRSS</a>
+                        </li>
+                        <li>
+                            <a href="#">Últimas Noticias</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <span>Contáctenos</span>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#">Redacción</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto Comercial</a>
+                        </li>
+                        <li>
+                            <a href="#">Media Kit</a>
+                        </li>
+                        <li>
+                            <a href="#">Empleo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <span>Redes Sociales</span>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">YouTube</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <span>Servicios</span>
+                        </li>
+                        <li>
+                            <a href="#">Términos y Condiciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Politicas de Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
+        <div class="copyright">
+            Todos los derechos reservados © 2023 El Faro.
+        </div>
+        <div class="socialnetwork-mobile">
+            <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-square-rss"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-square-youtube"></i>
+            </a>
+        </div>
     </footer>
+
 </body>
+<script type="text/javascript" src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 
 </html>

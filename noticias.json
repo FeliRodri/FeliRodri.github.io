@@ -1,0 +1,17 @@
+[
+    {
+        "title": "El papa Francisco preside la misa del Domingo de Ramos desde la Plaza de San Pedro en el Vaticano",
+        "Category": "Internacional",
+        "image": "img/news.jpg"
+    },
+    {
+        "title": "Así sería la Nueva Bombonera en la Isla Demarchi con capacidad para más de 100 mil personas",
+        "Category": "Deportes",
+        "image": "img/estadio.jpg"
+    },
+    {
+        "title": "Casi 30 startups chilenas participaron de evento latino de emprendimiento",
+        "Category": "Negocios",
+        "image": "img/fintech.jpg"
+    }
+]

@@ -23,3 +23,8 @@
     font-family: Libre-Franklin-Bold;
     src: url("./fonts/LibreFranklin-Bold.ttf")
 }
+
+@font-face {
+    font-family: Libre-Franklin-Regular;
+    src: url("./fonts/LibreFranklin-Regular.ttf");
+}
